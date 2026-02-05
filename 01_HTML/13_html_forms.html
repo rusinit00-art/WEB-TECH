@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Forms</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+</head>
+
+<body>
+
+<!-- //////////////////////// <input> tag //////////////////////// -->
+<!--
+<form>
+    <input type="text">
+    <input type="button" value="Click Me!">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="color">
+
+    <input type="date">
+    <input type="time">
+    <input type="month">
+    <input type="week">
+    <input type="datetime-local">
+
+    <input type="file">
+    <input type="image" src="assets/small.jpg">
+
+    <input type="text">
+    <input type="email">
+    <input type="tel">
+    <input type="url">
+    <input type="search">
+    <input type="password">
+    <input type="range">
+
+    <input type="submit" value="Submit!">
+    <input type="reset" value="Reset!">
+</form>
+-->
+
+<!-- //////////////////////// Sample Form 01 //////////////////////// -->
+
+<!--
+<form action="backend.html" method="post">
+
+    <h1>Sign In</h1>
+
+    <div>
+        <label for="email-input">Email:</label>
+        <br>
+        <input type="email" id="email-input" name="email-name">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="password-input">Password:</label>
+        <br>
+        <input type="password" id="password-input" name="password-name">
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit" value="Sign In">
+        <input type="reset" value="Reset">
+    </div>
+
+</form>
+-->
+
+<!-- //////////////////////// Sample Form 02 //////////////////////// -->
+
+<form>
+
+  <h1>Student Registration</h1>
+
+  <!-- Student ID -->
+  <div>
+    <label for="student-id">Student ID</label>
+    <br>
+    <input type="text" id="student-id" name="sid" placeholder="E.g. S001">
+  </div>
+
+  <!-- First Name -->
+  <div>
+    <label for="first-name">First Name</label>
+    <br>
+    <input type="text" id="first-name" name="fname" placeholder="E.g. Praveena">
+  </div>
+
+  <!-- Last Name -->
+  <div>
+    <label for="last-name">Last Name</label>
+    <br>
+    <input type="text" id="last-name" name="lname" placeholder="E.g. Gunasekara">
+  </div>
+
+  <!-- DOB -->
+  <div>
+    <label for="last-name">DOB</label>
+    <br>
+    <input type="date" id="dob" name="dob">
+  </div>
+
+  <!-- Age -->
+  <div>
+    <label for="age">Age</label>
+    <br>
+    <input type="number" id="age" name="age" placeholder="E.g. 22">
+  </div>
+
+  <!-- Address -->
+
+  <div>
+    <label for="address">Address</label>
+    <br>
+    <textarea id="address" name="address" placeholder="E.g. Hikkaduwa" cols="50" rows="10"></textarea>
+  </div>
+
+  <div>
+    <label for="programme">Programme</label>
+    <br>
+    <select id="programme">
+      <optgroup label="Undergraduate Studies">
+        <option>CMJD</option>
+        <option>HDSE</option>
+        <option>BSc - University of Greater Manchester</option>
+        <option>BSc - Lincoln University College</option>
+      </optgroup>
+      <optgroup label="Graduate Studies">
+        <option>PGD - Immersive Software Engineering</option>
+        <option>PGD - Data Science</option>
+        <option>PGD - AI</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div>
+    <label>Entry Requirments</label>
+    <br>
+    <input type="checkbox" id="ol"> <label for="ol">O/L</label>
+    <br>
+    <input type="checkbox" id="al"> <label for="al">A/L</label>
+  </div>
+
+  <div>
+    <label>Gender</label>
+    <br>
+    <input type="radio" id="male" name="gender"> <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" name="gender"> <label for="female">Female</label>
+    <br>
+    <input type="radio" id="other" name="gender"> <label for="other">Other</label>
+  </div>
+
+  <div>
+    <!-- Submit btn -->
+    <button type="submit">Submit</button>
+    <!-- Update btn -->
+    <button type="button">Update</button>
+    <!-- Delete btn -->
+    <button type="button">Delete</button>
+    <!-- Reset btn -->
+    <button type="reset">Reset</button>
+  </div>
+
+</form>
+
+</body>
+
+</html>
