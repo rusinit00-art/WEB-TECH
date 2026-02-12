@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, javascript, js, java, python">
+  <meta name="description" content="World best web development tutorials">
+  <meta name="author" content="IJSE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Selector</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <style>
+
+    /* /////////////////////////// Pseudo Element Selectors /////////////////////////// */
+
+    h1::after {
+      content: "Hello!";
+      background-color: pink;
+    }
+
+    h1::before {
+      content: "Welcome to ";
+      background-color: deeppink;
+    }
+
+    p::first-letter {
+      font-size: 50px;
+    }
+
+    p::first-line {
+      color: dodgerblue;
+    }
+
+    li::marker {
+      content: "💡";
+    }
+
+    input::file-selector-button {
+      background-color: red;
+    }
+
+    input::placeholder {
+      color: blue;
+    }
+
+    ::selection {
+      background-color: pink;
+      color: red;
+    }
+
+    /*p {*/
+    /*    user-select: none;*/
+    /*}*/
+
+  </style>
+
+</head>
+
+<body>
+
+<h1>Sri Lanka!</h1>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur consequatur dolores eaque eligendi laborum laudantium magnam nam neque, nesciunt numquam odio, pariatur rem sequi soluta tenetur vel voluptatum? Ipsum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur consequatur dolores eaque eligendi laborum laudantium magnam nam neque, nesciunt numquam odio, pariatur rem sequi soluta tenetur vel voluptatum? Ipsum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur consequatur dolores eaque eligendi laborum laudantium magnam nam neque, nesciunt numquam odio, pariatur rem sequi soluta tenetur vel voluptatum? Ipsum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur consequatur dolores eaque eligendi laborum laudantium magnam nam neque, nesciunt numquam odio, pariatur rem sequi soluta tenetur vel voluptatum? Ipsum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur consequatur dolores eaque eligendi laborum laudantium magnam nam neque, nesciunt numquam odio, pariatur rem sequi soluta tenetur vel voluptatum? Ipsum.
+</p>
+
+<ul>
+  <li>C</li>
+  <li>C++</li>
+  <li>C#</li>
+  <li>Java</li>
+  <li>Python</li>
+  <li>Go</li>
+</ul>
+
+<form>
+  <input type="file">
+  <input type="text" placeholder="Enter your name">
+</form>
+
+</body>
+
+</html>
