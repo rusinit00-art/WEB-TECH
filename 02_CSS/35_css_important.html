@@ -8,24 +8,23 @@
     <meta name="author" content="IJSE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CSS Inheritance</title>
+    <title>Grid layout</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
     <link rel="stylesheet" href="assets/lib/normalize.css">
-
     <style>
 
+        h1 {
+            color: red!important;
+        }
 
-       div {
-           font-size: 20px;  /* px,em,rem */
-           font-weight:bolder; /* bold, bolder , lighter,normal is default */
-           font-style: italic; /* italic,normal*/
-           text-decoration: underline;
-           color:brown;
+        .myText {
+            color: blue;
+        }
 
-
-       }
-
+        #myH1 {
+            color: greenyellow;
+        }
 
 
 
@@ -35,14 +34,8 @@
 
 <body>
 
-<section>
 
-
-
-    <div>I'm Rusini</div>
-
-</section>
-
+<h1 id="myH1" class="myText">Hello World!</h1>
 
 </body>
 
