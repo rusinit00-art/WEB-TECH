@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timers Ex</title>
+
+  <style>
+
+    section {
+      display: flex;
+    }
+
+    div {
+      padding: 10px;
+      border: 3px solid darkblue;
+      background: #805e9c;
+      border-radius: 10px;
+      margin: 5px;
+      font-size: 30px;
+      min-width: 40px;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<section>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+</section>
+
+<script>
+
+var list  = ["A", "B", "C", "D", "E"];
+setInterval(() => {
+
+  var last_List = list.pop();
+  list.unshift(last_List);
+
+  list.unshift(list.pop());
+  for (let i = 0; i < list.length; i++) {
+    document.getElementsByTagName("div")[i].innerText = list[i];
+  }
+},800 )
+
+
+
+</script>
+</body>
+</html>
